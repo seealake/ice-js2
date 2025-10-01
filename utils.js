@@ -14,10 +14,10 @@ function getPrincipal() {
 }
 
 /**
- * Returns the number in the return rate as a number, e.g. 7% returns 7.
+ * Returns the number in the return rate as a decimal number, e.g. 7% returns 0.07
  * @returns The number if it exists, else null
  */
-function getReturnPerc() {
+function getReturnDecimal() {
   const inp = document.getElementById("return-rate").value.trim();
   if (inp === "") {
     return null;
