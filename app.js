@@ -1,11 +1,15 @@
 console.log("app.js loaded");
 
 function invest() {
-  // TODO - your investment calculation!
   const principal = getPrincipal();
-  const returnPerc = getReturnPerc();
+  const returnRate = getReturnDecimal();
   const numOfYears = getNumOfYears();
-  const total = principal * Math.pow((1 + returnPerc), numOfYears);
+
+  if (principal == null || returnRate == null || numOfYears == null) {
+    return "0.00";
+  }
+
+  const total = principal * Math.pow(1 + returnRate, numOfYears);
   return total.toFixed(2);
 }
 
