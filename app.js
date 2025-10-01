@@ -1,5 +1,7 @@
 console.log("app.js loaded");
 
-function calculate() {
-  // TODO Do your calculation!
+function invest() {
+  // TODO - your investment calculation!
 }
+
+console.log(invest());
