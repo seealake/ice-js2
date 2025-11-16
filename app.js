@@ -2,6 +2,7 @@ console.log("app.js loaded");
 
 function invest() {
   // TODO - your investment calculation!
+  principal = 100;
 }
 
 console.log(invest());
